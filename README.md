@@ -27,14 +27,6 @@ From the project root (with the venv activated):
 python -m streamlit run App.py
 ```
 
-Using `python -m streamlit` avoids broken `streamlit.exe` launchers if the project folder was **moved or renamed** after packages were installed (the `.exe` embeds the old path to `python.exe`).
-
-To repair the `streamlit` shortcut instead, reinstall it in the current venv:
-
-```text
-python -m pip install --force-reinstall streamlit
-```
-
 ## Project layout
 
 - `App.py` — Streamlit UI
