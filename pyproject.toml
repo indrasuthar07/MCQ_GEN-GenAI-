@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcqgenerator"
+version = "0.0.1"
+description = "Gen-AI MCQ generator (Streamlit + OpenAI + LangChain)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Indra suthar", email = "indrasuthar14@gmail.com" }]
+dependencies = [
+    "openai>=1.0",
+    "python-dotenv",
+    "langchain-core>=0.2.38,<0.3",
+    "langchain-openai>=0.1.20,<0.2",
+    "langchain-community>=0.2.12,<0.3",
+    "streamlit",
+    "PyPDF2",
+    "pandas",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
