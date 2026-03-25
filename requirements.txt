@@ -1,4 +1,4 @@
-# Stack works on Python 3.8+. (The `langchain` meta-package 0.3+ needs Python 3.9+; this app only needs core + integrations.)
+# Stack works on Python 3.8+.
 openai>=1.0
 python-dotenv
 langchain-core>=0.2.38,<0.3
