@@ -3,7 +3,7 @@ import logging
 import os
 import re
 
-import src.mcqgenerator.logger  # noqa: F401 — configures log files on import
+import src.mcqgenerator.logger 
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
